@@ -1,36 +1,24 @@
-namespace BookstoreManagement
+using System.ComponentModel.DataAnnotations;
+
+namespace BookstoreManagement.Models
 {
-    public class Program
+    public class Book
     {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+        public int BookId { get; set; }  // Unique identifier for the book
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
+        [Required(ErrorMessage = "Title is required")]
+        [StringLength(100, ErrorMessage = "Title cannot exceed 100 characters")]
+        public string Title { get; set; }
 
-            var app = builder.Build();
+        [Required(ErrorMessage = "Author is required")]
+        [StringLength(100, ErrorMessage = "Author cannot exceed 100 characters")]
+        public string Author { get; set; }
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+        [Range(0.01, 1000.00, ErrorMessage = "Price must be between 0.01 and 1000.00")]
+        public decimal Price { get; set; }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-
-            app.Run();
-        }
+        [Required(ErrorMessage = "Genre is required")]
+        [StringLength(50, ErrorMessage = "Genre cannot exceed 50 characters")]
+        public string Genre { get; set; }
     }
 }

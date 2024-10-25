@@ -1,0 +1,30 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    transition: box-shadow 0.2s ease; /* Smooth transition */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Optional container for content */
+.container {
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto; /* Center the container */
+    padding: 15px; /* Optional padding */
+}
