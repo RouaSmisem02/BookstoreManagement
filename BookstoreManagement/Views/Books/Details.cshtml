@@ -1,0 +1,22 @@
+﻿@model BookstoreManagement.Models.Book
+
+<h1>Book Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Title</td>
+            <td>@Model.Author</td>
+            <td>@Model.Price:C</td>
+            <td>@Model.Genre</td>
+        </tr>
+    </tbody>
+</table>

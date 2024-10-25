@@ -1,0 +1,9 @@
+﻿<h1>Remove Book</h1>
+
+<form asp-action="Remove" method="post">
+    <div class="form-group">
+        <label for="BookId">Book ID</label>
+        <input class="form-control" name="Id" id="BookId" required />
+    </div>
+    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to remove this book?');">Remove</button>
+</form>

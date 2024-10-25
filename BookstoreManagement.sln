@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookstoreManagement", "BookstoreManagement\BookstoreManagement.csproj", "{40CEB335-973B-4B92-ABAB-BB8209F11D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookstoreManagement", "BookstoreManagement\BookstoreManagement.csproj", "{40CEB335-973B-4B92-ABAB-BB8209F11D78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{71E77B63-7625-47E3-9D21-1B1F34B217EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{A30E0906-63E5-4462-BD63-C5ABA3BA2312}"
+	ProjectSection(SolutionItems) = preProject
+		site.css = site.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{DD864CBB-9F54-469F-BEAE-4D7AD070278E}"
+	ProjectSection(SolutionItems) = preProject
+		site.js = site.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{1A65A458-B687-466B-9937-9C28F1BB47BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bootstrap", "bootstrap", "{9B05F30E-E945-4DCB-97FF-2B0C5C1F250F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +34,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A30E0906-63E5-4462-BD63-C5ABA3BA2312} = {71E77B63-7625-47E3-9D21-1B1F34B217EE}
+		{DD864CBB-9F54-469F-BEAE-4D7AD070278E} = {71E77B63-7625-47E3-9D21-1B1F34B217EE}
+		{1A65A458-B687-466B-9937-9C28F1BB47BA} = {71E77B63-7625-47E3-9D21-1B1F34B217EE}
+		{9B05F30E-E945-4DCB-97FF-2B0C5C1F250F} = {1A65A458-B687-466B-9937-9C28F1BB47BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12EA6F61-B66F-48FD-91D8-F30A34F29D6F}
